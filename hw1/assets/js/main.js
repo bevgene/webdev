@@ -63,6 +63,7 @@ jQuery(function($) {
         e.preventDefault();
         // hide the featured product carousel with a sliding motion:
         $('#featured-product-carousel').slideUp('slow', function() {
+            $("#search-product-section").show();
             showItems("assets/data/search-results.json");
         });
 
