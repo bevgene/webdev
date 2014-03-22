@@ -3,7 +3,7 @@
  */
 
 jQuery(function($) {
-
+    $("#search-product-section").hide();
     $("#inputSearchSlider").slider({}).on('slide', function(e) {
         document.getElementById('inputSearchSliderCurrMinPrice').value = e.value[0];
         document.getElementById('inputSearchSliderCurrMaxPrice').value = e.value[1];
