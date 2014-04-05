@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="auction">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title ng-bind="title">Auction</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+    <auction-navbar></auction-navbar>
+
+    <div class="container">
+        <div class="row" ng-view></div>
+    </div>
+
+    <auction-footer></auction-footer>
+
+    <!-- Lib scripts -->
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controller/HomeController.js"></script>
+    <script src="scripts/controller/SearchController.js"></script>
+    <script src="scripts/directive/FooterDirective.js"></script>
+    <script src="scripts/directive/NavbarDirective.js"></script>
+    <script src="scripts/model/ProductModel.js"></script>
+    <script src="scripts/service/ProductService.js"></script>
+</body>
+</html>
